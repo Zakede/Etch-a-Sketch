@@ -15,12 +15,16 @@
         <div class="title">
             <h1>ETCH LE SKETCH</h1>
         </div>
+        <div class="mode">
+            Mode: Coloring!
+        </div>
         <div class="content">
             <div class="board"></div><br>
             <div class="buttons">
-                <button clsass="colorButton" onclick="changeColor('black')">Black</button>
-                <button clsass="colorButton" onclick="changeColor('whitesmoke')">Eraser</button>
-                <button clsass="colorButton" onclick="changeSize(16)">Resest</button>
+                <button class="colorButton" onclick="changeColor('black')">Black</button>
+                <button class="colorButton" onclick="changeColor('whitesmoke')">Eraser</button>
+                <button class="colorButton" onclick="changeColor('random')">Random</button>
+                <button class="colorButton" onclick="resetBoard()">Resest</button>
             </div>
             <div>
                 <input type="text" placeholder="Size of Board" value="16" 
