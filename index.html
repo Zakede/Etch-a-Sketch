@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <title>Document</title>
+    <title>Etch Le Sketch</title>
 </head>
 
 <body>
@@ -16,15 +16,15 @@
             <h1>ETCH LE SKETCH</h1>
         </div>
         <div class="content">
-            <div class="board"></div>
+            <div class="board"></div><br>
             <div class="buttons">
-                <button type="button">Black</button>
-                <button type="button">White</button>
-                <button type="button">Random</button>
-                <button type="button">Resest</button>
+                <button clsass="colorButton" onclick="changeColor('black')">Black</button>
+                <button clsass="colorButton" onclick="changeColor('whitesmoke')">Eraser</button>
+                <button clsass="colorButton" onclick="changeSize(16)">Resest</button>
             </div>
             <div>
-                <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)" />
+                <input type="text" placeholder="Size of Board" value="16" 
+                onchange="changeSize(this.value)" />
                 <button>Set Size</button>
                 <span id="boxError">Box Size Is 16</span>   
             </div>
