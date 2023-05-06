@@ -52,12 +52,14 @@ function resetBoard(){
     squares.forEach((div) => div.style.backgroundColor = "whitesmoke");
 }
 
-document.querySelector("body").addEventListener("click", () => {
-    click = !click
-    if(click) {
-        document.querySelector(".mode").textContent = "Mode: Coloring!";
-    }else{
-        document.querySelector(".mode").textContent = "Mode: Not Coloring!";
+document.querySelector("body").addEventListener("click", (e) => {
+    if (e.target.tagName != "BUTTON"){
+        click = !click
+        if(click) {
+            document.querySelector(".mode").textContent = "Mode: Coloring!";
+        }else{
+            document.querySelector(".mode").textContent = "Mode: Not Coloring!";
+        }
     }
 });
 document.getElementById("boxError").addEventListener("click");
