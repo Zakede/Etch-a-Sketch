@@ -62,4 +62,5 @@ document.querySelector("body").addEventListener("click", (e) => {
         }
     }
 });
+
 document.getElementById("boxError").addEventListener("click");
